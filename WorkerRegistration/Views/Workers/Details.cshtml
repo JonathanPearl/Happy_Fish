@@ -1,0 +1,131 @@
+﻿@model WorkerRegistration.Models.Worker
+
+@{
+    ViewBag.Title = "Details";
+}
+<script type="text/javascript" src="~/Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.qrcode.min.js"></script>
+<h2>Details</h2>
+
+<div>
+    <h4>Worker</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>QR Code</dt>
+
+        <dd class="qrbk">
+            <div id="qrcode" class="qrcd"></div><br />
+        </dd>
+
+        <dt>
+            Worker ID
+        </dt>
+
+        <dd id="code">
+            @Html.DisplayFor(model => model.QRCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstNames)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstNames)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Issue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Issue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Expiry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Expiry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occupation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occupation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+    </dl>
+    <script type="text/javascript">$('#qrcode').qrcode(document.getElementById('code').innerHTML)</script>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WorkerId })
+    <!--|
+    @Html.ActionLink("Back to List", "Index")-->
+</p>
