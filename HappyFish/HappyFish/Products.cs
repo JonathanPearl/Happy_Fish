@@ -8,8 +8,10 @@ namespace HappyFish
 {
     public class Products
     {
-        public string name;
-        public ObservableCollection<Needs> needs;
+        public string Name;
+        public List<Needs> Needs;
+        public List<Products> FriendlyProducts;
+        public List<Products> AggressiveProducts;
 
     }
 }
