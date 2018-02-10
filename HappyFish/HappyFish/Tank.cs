@@ -14,7 +14,7 @@ namespace HappyFish
         public string DisplayName{ get; set; }
         public decimal Volume{ get; set; }
 
-        public Dictionary <DateTime,TankEnvironment> EnvironmentStates{ get; set; }
+        public Dictionary <DateTime,TankEnvironment> TankMeasurements{ get; set; }
         public List <Product> Products{ get; set; }
         public Dictionary<DateTime, Event> Events{ get; set; }
     }
