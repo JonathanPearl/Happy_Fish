@@ -8,18 +8,18 @@ namespace HappyFish
 {
     public class Product
     {
-        public int ProductId;
-        public int OtherProductId;
+        public int ProductId{ get; set; }
+        public int OtherProductId{ get; set; }
 
-        public int SupplierId;
-        public int TankId;
+        public int SupplierId{ get; set; }
+        public int TankId{ get; set; }
 
-        public string Name;
-        public decimal Price;
-        public string PriceUnits;
-        public List<Need> Needs;
-        public List<Product> FriendlyProducts;
-        public List<Product> AggressiveProducts;
-        public Dictionary<DateTime, Event> Events;
+        public string Name{ get; set; }
+        public decimal Price{ get; set; }
+        public string PriceUnits{ get; set; }
+        public List<Need> Needs{ get; set; }
+        public List<Product> FriendlyProducts{ get; set; }
+        public List<Product> AggressiveProducts{ get; set; }
+        public Dictionary<DateTime, Event> Events{ get; set; }
     }
 }

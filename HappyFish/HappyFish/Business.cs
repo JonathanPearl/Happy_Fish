@@ -7,11 +7,11 @@ namespace HappyFish
 {
     public class Business
     {
-        private int Id;
-        public int SupplierId;
-        public int FisheryId;
+        private int Id{ get; set; }
+        public int SupplierId{ get; set; }
+        public int FisheryId{ get; set; }
 
-        public string DisplayName;
-        public Address Location;
+        public string DisplayName{ get; set; }
+        public Address Location{ get; set; }
     }
 }

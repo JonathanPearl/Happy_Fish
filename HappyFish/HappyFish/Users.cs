@@ -8,13 +8,13 @@ namespace HappyFish
     public class Users
     {
         public int Id { get; set; }
-        public int SupplierId;
-        public int FisheryId;
+        public int SupplierId{ get; set; }
+        public int FisheryId{ get; set; }
 
-        public string First_Name;
-        public string Middle_Names;
-        public string Last_Name;
-        public string Password;
-        public string EMail;
+        public string First_Name{ get; set; }
+        public string Middle_Names{ get; set; }
+        public string Last_Name{ get; set; }
+        public string Password{ get; set; }
+        public string EMail{ get; set; }
     }
 }

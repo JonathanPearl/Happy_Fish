@@ -7,10 +7,10 @@ namespace HappyFish
 {
     public class LifeStage
     {
-        public int LifeStageId;
-        public int NeedId;
+        public int LifeStageId{ get; set; }
+        public int NeedId{ get; set; }
 
-        public string Name;
-        public decimal Weight;
+        public string Name{ get; set; }
+        public decimal Weight{ get; set; }
     }
 }

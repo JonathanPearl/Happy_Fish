@@ -7,9 +7,9 @@ namespace HappyFish
 {
     public class Address
     {
-        public int Id;
-        public int BusinessId;
+        public int Id{ get; set; }
+        public int BusinessId{ get; set; }
 
-        public string Location;
+        public string Location{ get; set; }
     }
 }

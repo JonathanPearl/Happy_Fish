@@ -8,10 +8,10 @@ namespace HappyFish
 {
     public class Supplier
     {
-        public int SupplierId ;
+        public int SupplierId { get; set; }
 
-        public Business Business;
-        public List<Users> Users;
-        public List<Product> Products;
+        public Business Business{ get; set; }
+        public List<Users> Users{ get; set; }
+        public List<Product> Products{ get; set; }
     }
 }

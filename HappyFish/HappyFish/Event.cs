@@ -7,13 +7,13 @@ namespace HappyFish
 {
     public class Event
     {
-        public int EventId;
-        public int TankId;
-        public int ProductId;
+        public int EventId{ get; set; }
+        public int TankId{ get; set; }
+        public int ProductId{ get; set; }
 
-        public DateTime EventTime;
-        public string DisplayNote;
-        public string WarningType;
+        public DateTime EventTime{ get; set; }
+        public string DisplayNote{ get; set; }
+        public string WarningType{ get; set; }
 
     }
 }

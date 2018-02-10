@@ -8,14 +8,14 @@ namespace HappyFish
 {
     public class Tank
     {
-        public int TankId;
-        public int FisheryId;
+        public int TankId{ get; set; }
+        public int FisheryId{ get; set; }
 
-        public string DisplayName;
-        public decimal Volume;
+        public string DisplayName{ get; set; }
+        public decimal Volume{ get; set; }
 
-        public Dictionary <DateTime,TankEnvironment> EnvironmentStates;
-        public List <Product> Products;
-        public Dictionary<DateTime, Event> Events;
+        public Dictionary <DateTime,TankEnvironment> EnvironmentStates{ get; set; }
+        public List <Product> Products{ get; set; }
+        public Dictionary<DateTime, Event> Events{ get; set; }
     }
 }
