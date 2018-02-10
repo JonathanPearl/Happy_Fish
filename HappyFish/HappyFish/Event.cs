@@ -5,9 +5,11 @@ using System.Text;
 
 namespace HappyFish
 {
-    public class TankEnvironment
+    public class Event
     {
         public DateTime EventTime;
-        public Dictionary<string, string>MeasuringItem ;
+        public string DisplayNote;
+        public string WarningType;
+
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HappyFish
 {
-    class Supplier
+    public class Supplier
     {
+        public Business Business;
+        public List<Users> Users;
+        public List<Product> Products;
     }
 }

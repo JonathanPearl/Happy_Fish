@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HappyFish
 {
-    class Size
+    public class Size
     {
     }
 }

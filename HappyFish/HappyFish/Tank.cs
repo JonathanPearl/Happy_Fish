@@ -10,12 +10,9 @@ namespace HappyFish
     {
         private int Id;
         public string DisplayName;
-        private Size Size;
-        public Dictionary <DateTime,TankEnvironment> environment;
-        private Dictionary<string, Products> products;
-        
-       
-
-
+        public Size Size;
+        public Dictionary <DateTime,TankEnvironment> EnvironmentStates;
+        public Dictionary<string, Product> Products;
+        public Dictionary<DateTime, Event> Events;
     }
 }
