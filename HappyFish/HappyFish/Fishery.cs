@@ -9,24 +9,12 @@ namespace HappyFish
 {
     public class Fishery
     {
+        private int Id;
         public string DisplayName;
-        public string RegisteredName;
-        public string Location; // ToDO - Change To Address
-        public Dictionary<string ,Tank> Tanks;
+        public Address Location;
+        
+        public List<Users> User; 
+        public List<Tank> Tanks;
 
-        public Fishery()
-        {
-            Tanks = new Dictionary<string, Tank>();
-        }
-
-        internal void AddTank(Tank tank)
-        {
-           Tanks.Add(tank.DisplayName,tank);
-        }
-
-        internal void DeleteTank(string DisplayName)
-        {
-            
-        }
     }
 }

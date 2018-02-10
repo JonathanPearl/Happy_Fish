@@ -8,10 +8,13 @@ namespace HappyFish
 {
     public class Tank
     {
+        private int Id;
         public string DisplayName;
-        private ObservableCollection<Products> products;
-        private TankEnvironment environment;
-        private double size;
+        private Size Size;
+        public Dictionary <DateTime,TankEnvironment> environment;
+        private Dictionary<string, Products> products;
+        
+       
 
 
     }

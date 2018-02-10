@@ -5,8 +5,7 @@ using System.Text;
 
 namespace HappyFish
 {
-    public class Address
+    class Size
     {
-        public string Location;
     }
 }
