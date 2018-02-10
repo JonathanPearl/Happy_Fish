@@ -7,5 +7,9 @@ namespace HappyFish
 {
     public class Needs
     {
+        public LifeStage LifeStage;
+        public Nutrition Nutrition;
+        public TankEnvironment MinEnvironment;
+        public TankEnvironment MaxEnvironment;
     }
 }
