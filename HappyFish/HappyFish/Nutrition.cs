@@ -7,6 +7,9 @@ namespace HappyFish
 {
     public class Nutrition
     {
+        public int NutritionId;
+        public int NeedId;
+
         public string Name;
         public decimal Value;
         public decimal Frequency;

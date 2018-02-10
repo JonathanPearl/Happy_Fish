@@ -7,6 +7,9 @@ namespace HappyFish
 {
     public class Need
     {
+        public int NeedId;
+        public int ProductId;
+
         public LifeStage LifeStage;
         public List<Nutrition> Nutrition;
         public TankEnvironment MinEnvironment;// PH 3.7 // Amonia 0.1mg p l Blue Tilapia

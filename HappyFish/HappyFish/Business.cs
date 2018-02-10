@@ -8,6 +8,9 @@ namespace HappyFish
     public class Business
     {
         private int Id;
+        public int SupplierId;
+        public int FisheryId;
+
         public string DisplayName;
         public Address Location;
     }

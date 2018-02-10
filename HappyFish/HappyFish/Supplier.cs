@@ -8,6 +8,8 @@ namespace HappyFish
 {
     public class Supplier
     {
+        public int SupplierId ;
+
         public Business Business;
         public List<Users> Users;
         public List<Product> Products;

@@ -7,6 +7,10 @@ namespace HappyFish
 {
     public class Users
     {
+        public int Id { get; set; }
+        public int SupplierId;
+        public int FisheryId;
+
         public string First_Name;
         public string Middle_Names;
         public string Last_Name;

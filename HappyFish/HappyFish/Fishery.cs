@@ -9,6 +9,8 @@ namespace HappyFish
 {
     public class Fishery
     {
+        public int FisheryId;
+
         public Business Business;     
         public List<Users> User; 
         public List<Tank> Tanks;

@@ -7,8 +7,10 @@ namespace HappyFish
 {
     public class LifeStage
     {
+        public int LifeStageId;
+        public int NeedId;
+
         public string Name;
-        public Size Dimensions;
         public decimal Weight;
     }
 }

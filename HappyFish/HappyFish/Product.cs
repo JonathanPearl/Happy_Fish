@@ -8,6 +8,12 @@ namespace HappyFish
 {
     public class Product
     {
+        public int ProductId;
+        public int OtherProductId;
+
+        public int SupplierId;
+        public int TankId;
+
         public string Name;
         public decimal Price;
         public string PriceUnits;
