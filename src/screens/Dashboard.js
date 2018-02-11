@@ -9,7 +9,7 @@ import './Dashboard.css';
 import Search from "../components/Search";
 import Tanks from "../components/Tanks";
 import Tank from "../components/Tank";
-
+import SearchResults from "../components/SearchResults";
 
 export default class Dashboard extends Component {
     constructor(props) {
@@ -99,12 +99,12 @@ export default class Dashboard extends Component {
                             <div className='main-content-area'>
                                 {/*<Router>*/}
                                     <div>
-                                        <Route exact path="/" render={() => <Tanks {...this.state}
+                                        <Route exact path="/" render={(props) => <Tanks {...this.state} {...props}
                                                                                    setTank={this.setTank.bind(this)}/>}/>
-                                        <Route exact path="/tanks" render={() => <Tank
-                                            tank={this.state.tanks[this.state.selected_tank]} {...this.state}
+                                        <Route exact path="/tanks" render={(props) => <Tank
+                                            tank={this.state.tanks[this.state.selected_tank]} {...this.state} {...props}
                                             upDateEnv={this.upDateEnv.bind(this)}/>}/>
-                                        <Route exact path="/search" render={() => <Search {...this.state}/>}/>
+                                        <Route exact path="/search" render={(props) => <SearchResults {...this.state} {...props}/>}/>
                                     </div>
                                 {/*</Router>*/}
                             </div>
