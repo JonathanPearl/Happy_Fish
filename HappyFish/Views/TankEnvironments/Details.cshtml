@@ -1,0 +1,74 @@
+﻿@model HappyFish.TankEnvironment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TankEnvironment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ammonia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ammonia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oxygen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oxygen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Conductivity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Conductivity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Temperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Temperature)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TankEnvironmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<HappyFish.Event>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TankId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TankId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EventId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EventId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EventId })
+        </td>
+    </tr>
+}
+
+</table>
