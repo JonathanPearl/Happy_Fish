@@ -1,0 +1,25 @@
+.side-bar {
+  width: auto;
+  max-width: 240px;
+  height: 100vh;
+  background: #0066cc;
+  color: #ffffff;
+  border-top: 1px solid; }
+  .side-bar span div > div {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; }
+  .side-bar span i {
+    margin: 0 10px 0 0;
+    font-size: 30px; }
+  .side-bar a {
+    text-decoration: none;
+    display: block; }
+
+.dash-body {
+  display: flex; }
+  .dash-body .main-content-area {
+    padding: 20px;
+    flex-grow: 1; }
+
+/*# sourceMappingURL=Dashboard.css.map */

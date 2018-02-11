@@ -1,0 +1,28 @@
+.search-component {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  i {
+    position: absolute;
+    right: 10px;
+    color: #004080;
+  }
+
+  input {
+    background: #fff;
+    font-family: 'Roboto Black', sans-serif;
+    border: 1px solid #004080;
+    max-width: 600px;
+    padding: 10px 40px 10px 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    color: #004080;
+    outline: none;
+
+    &::placeholder {
+      color: #004080;
+    }
+  }
+}

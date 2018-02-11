@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+html, body {
+  height: 100%; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; }
+
+.App {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; }
+
+.App-logo {
+  height: 80px; }
+
+.App-header {
+  background-color: #004080;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .App-header span {
+    padding: 0 10px;
+    font-size: 30px;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=App.css.map */

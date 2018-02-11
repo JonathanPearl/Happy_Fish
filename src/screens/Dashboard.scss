@@ -1,0 +1,35 @@
+.side-bar {
+  width: auto;
+  max-width: 240px;
+  height: 100vh;
+  background: rgb(0, 102, 204);
+  color: #ffffff;
+  border-top: 1px solid;
+
+  span {
+    div > div {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    i {
+      margin: 0 10px 0 0;
+      font-size: 30px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.dash-body {
+  display: flex;
+
+  .main-content-area {
+    padding: 20px;
+    flex-grow: 1;
+  }
+}
