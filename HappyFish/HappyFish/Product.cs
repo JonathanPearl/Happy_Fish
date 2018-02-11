@@ -17,6 +17,9 @@ namespace HappyFish
         public string Name{ get; set; }
         public decimal Price{ get; set; }
         public string PriceUnits{ get; set; }
+        
+        public LifeStage LifeStage { get; set; }
+        public List<Nutrition> Nutrition { get; set; }
         public List<Need> Needs{ get; set; }
         public List<Product> FriendlyProducts{ get; set; }
         public List<Product> AggressiveProducts{ get; set; }

@@ -11,7 +11,7 @@ namespace HappyFish
         public int MeasuringCriteriaId { get; set; }
         public int TankEnvironmentId { get; set; }
 
-        public string MeasuringType { get; set; } // EG PH, Oxygen, Nitrogen Ect.
+        public string MeasuringType { get; set; } // EG PH, Oxygen O2, Ammonia NH3 Ect.
         public double MeasuringValue { get; set; } // Actual Value of Each measurement
     }
 }
